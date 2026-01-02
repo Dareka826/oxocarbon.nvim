@@ -5,50 +5,46 @@ vim.g["colors_name"] = "oxocarbon"
 
 vim.o["termguicolors"] = true
 
-local oxocarbon = {}
+local oxocarbon = {
+  none = "NONE",
+}
 
 if vim.o.background == "dark" then
-  oxocarbon = {
-    base00 = "#161616",
-    base01 = "#262626",
-    base02 = "#393939",
-    base03 = "#525252",
-    base04 = "#d0d0d0",
-    base05 = "#f2f2f2",
-    base06 = "#ffffff",
-    base07 = "#08bdba",
-    base08 = "#3ddbd9",
-    base09 = "#78a9ff",
-    base10 = "#ee5396",
-    base11 = "#33b1ff",
-    base12 = "#ff7eb6",
-    base13 = "#42be65",
-    base14 = "#be95ff",
-    base15 = "#82cfff",
-    blend  = "#131313",
-    none   = "NONE",
-  }
+  oxocarbon.base00 = "#161616"
+  oxocarbon.base01 = "#262626"
+  oxocarbon.base02 = "#393939"
+  oxocarbon.base03 = "#525252"
+  oxocarbon.base04 = "#d0d0d0"
+  oxocarbon.base05 = "#f2f2f2"
+  oxocarbon.base06 = "#ffffff"
+  oxocarbon.base07 = "#08bdba"
+  oxocarbon.base08 = "#3ddbd9"
+  oxocarbon.base09 = "#78a9ff"
+  oxocarbon.base10 = "#ee5396"
+  oxocarbon.base11 = "#33b1ff"
+  oxocarbon.base12 = "#ff7eb6"
+  oxocarbon.base13 = "#42be65"
+  oxocarbon.base14 = "#be95ff"
+  oxocarbon.base15 = "#82cfff"
+  oxocarbon.blend  = "#131313"
 else
-  oxocarbon = {
-    base00 = "#ffffff",
-    base01 = "#f2f2f2",
-    base02 = "#d0d0d0",
-    base03 = "#161616",
-    base04 = "#37474F",
-    base05 = "#90A4AE",
-    base06 = "#525252",
-    base07 = "#08bdba",
-    base08 = "#ff7eb6",
-    base09 = "#ee5396",
-    base10 = "#FF6F00",
-    base11 = "#0f62fe",
-    base12 = "#673AB7",
-    base13 = "#42be65",
-    base14 = "#be95ff",
-    base15 = "#FFAB91",
-    blend  = "#FAFAFA",
-    none   = "NONE",
-  }
+  oxocarbon.base00 = "#ffffff"
+  oxocarbon.base01 = "#f2f2f2"
+  oxocarbon.base02 = "#d0d0d0"
+  oxocarbon.base03 = "#161616"
+  oxocarbon.base04 = "#37474F"
+  oxocarbon.base05 = "#90A4AE"
+  oxocarbon.base06 = "#525252"
+  oxocarbon.base07 = "#08bdba"
+  oxocarbon.base08 = "#ff7eb6"
+  oxocarbon.base09 = "#ee5396"
+  oxocarbon.base10 = "#FF6F00"
+  oxocarbon.base11 = "#0f62fe"
+  oxocarbon.base12 = "#673AB7"
+  oxocarbon.base13 = "#42be65"
+  oxocarbon.base14 = "#be95ff"
+  oxocarbon.base15 = "#FFAB91"
+  oxocarbon.blend  = "#FAFAFA"
 end
 
 do
