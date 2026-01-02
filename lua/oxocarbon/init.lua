@@ -5,24 +5,20 @@ vim.g["colors_name"] = "oxocarbon"
 
 vim.o["termguicolors"] = true
 
-local base00 = "#161616"
-local base06 = "#ffffff"
-local base09 = "#78a9ff"
-
 local oxocarbon = {}
 
 if vim.o.background == "dark" then
   oxocarbon = {
-    base00 = base00,
+    base00 = "#161616",
     base01 = "#262626",
     base02 = "#393939",
     base03 = "#525252",
     base04 = "#d0d0d0",
     base05 = "#f2f2f2",
-    base06 = base06,
+    base06 = "#ffffff",
     base07 = "#08bdba",
     base08 = "#3ddbd9",
-    base09 = base09,
+    base09 = "#78a9ff",
     base10 = "#ee5396",
     base11 = "#33b1ff",
     base12 = "#ff7eb6",
@@ -34,10 +30,10 @@ if vim.o.background == "dark" then
   }
 else
   oxocarbon = {
-    base00 = base06,
+    base00 = "#ffffff",
     base01 = "#f2f2f2",
     base02 = "#d0d0d0",
-    base03 = base00,
+    base03 = "#161616",
     base04 = "#37474F",
     base05 = "#90A4AE",
     base06 = "#525252",
