@@ -1,31 +1,86 @@
-local _local_1_ = require("oxocarbon.colorutils")
-local blend_hex = _local_1_["blend-hex"]
 if vim.g.colors_name then
   vim.cmd.hi("clear")
-else
 end
 vim.g["colors_name"] = "oxocarbon"
+
 vim.o["termguicolors"] = true
+
 local base00 = "#161616"
 local base06 = "#ffffff"
 local base09 = "#78a9ff"
-local oxocarbon = (((vim.o.background == "dark") and {base00 = base00, base01 = blend_hex(base00, base06, 0.085), base02 = blend_hex(base00, base06, 0.18), base03 = blend_hex(base00, base06, 0.3), base04 = blend_hex(base00, base06, 0.82), base05 = blend_hex(base00, base06, 0.95), base06 = base06, base07 = "#08bdba", base08 = "#3ddbd9", base09 = base09, base10 = "#ee5396", base11 = "#33b1ff", base12 = "#ff7eb6", base13 = "#42be65", base14 = "#be95ff", base15 = "#82cfff", blend = "#131313", none = "NONE"}) or {base00 = base06, base01 = blend_hex(base00, base06, 0.95), base02 = blend_hex(base00, base06, 0.82), base03 = base00, base04 = "#37474F", base05 = "#90A4AE", base06 = "#525252", base07 = "#08bdba", base08 = "#ff7eb6", base09 = "#ee5396", base10 = "#FF6F00", base11 = "#0f62fe", base12 = "#673AB7", base13 = "#42be65", base14 = "#be95ff", base15 = "#FFAB91", blend = "#FAFAFA", none = "NONE"})
-vim.g["terminal_color_0"] = oxocarbon.base01
-vim.g["terminal_color_1"] = oxocarbon.base11
-vim.g["terminal_color_2"] = oxocarbon.base14
-vim.g["terminal_color_3"] = oxocarbon.base13
-vim.g["terminal_color_4"] = oxocarbon.base09
-vim.g["terminal_color_5"] = oxocarbon.base15
-vim.g["terminal_color_6"] = oxocarbon.base08
-vim.g["terminal_color_7"] = oxocarbon.base05
-vim.g["terminal_color_8"] = oxocarbon.base03
-vim.g["terminal_color_9"] = oxocarbon.base11
-vim.g["terminal_color_10"] = oxocarbon.base14
-vim.g["terminal_color_11"] = oxocarbon.base13
-vim.g["terminal_color_12"] = oxocarbon.base09
-vim.g["terminal_color_13"] = oxocarbon.base15
-vim.g["terminal_color_14"] = oxocarbon.base07
-vim.g["terminal_color_15"] = oxocarbon.base06
+
+local oxocarbon = {}
+
+local colorutils = require("oxocarbon.colorutils")
+local blend_hex = colorutils["blend-hex"]
+
+if vim.o.background == "dark" then
+  oxocarbon = {
+    base00 = base00,
+    base01 = blend_hex(base00, base06, 0.085),
+    base02 = blend_hex(base00, base06, 0.18),
+    base03 = blend_hex(base00, base06, 0.3),
+    base04 = blend_hex(base00, base06, 0.82),
+    base05 = blend_hex(base00, base06, 0.95),
+    base06 = base06,
+    base07 = "#08bdba",
+    base08 = "#3ddbd9",
+    base09 = base09,
+    base10 = "#ee5396",
+    base11 = "#33b1ff",
+    base12 = "#ff7eb6",
+    base13 = "#42be65",
+    base14 = "#be95ff",
+    base15 = "#82cfff",
+    blend  = "#131313",
+    none   = "NONE",
+  }
+else
+  oxocarbon = {
+    base00 = base06,
+    base01 = blend_hex(base00, base06, 0.95),
+    base02 = blend_hex(base00, base06, 0.82),
+    base03 = base00,
+    base04 = "#37474F",
+    base05 = "#90A4AE",
+    base06 = "#525252",
+    base07 = "#08bdba",
+    base08 = "#ff7eb6",
+    base09 = "#ee5396",
+    base10 = "#FF6F00",
+    base11 = "#0f62fe",
+    base12 = "#673AB7",
+    base13 = "#42be65",
+    base14 = "#be95ff",
+    base15 = "#FFAB91",
+    blend  = "#FAFAFA",
+    none   = "NONE",
+  }
+end
+
+do
+  local function termcolor(index, color)
+    vim.g["terminal_color_" .. tostring(index)] = color
+  end
+
+  termcolor(0,  oxocarbon.base01)
+  termcolor(1,  oxocarbon.base11)
+  termcolor(2,  oxocarbon.base14)
+  termcolor(3,  oxocarbon.base13)
+  termcolor(4,  oxocarbon.base09)
+  termcolor(5,  oxocarbon.base15)
+  termcolor(6,  oxocarbon.base08)
+  termcolor(7,  oxocarbon.base05)
+  termcolor(8,  oxocarbon.base03)
+  termcolor(9,  oxocarbon.base11)
+  termcolor(10, oxocarbon.base14)
+  termcolor(11, oxocarbon.base13)
+  termcolor(12, oxocarbon.base09)
+  termcolor(13, oxocarbon.base15)
+  termcolor(14, oxocarbon.base07)
+  termcolor(15, oxocarbon.base06)
+end
+
 vim.api.nvim_set_hl(0, "ColorColumn", {fg = oxocarbon.none, bg = oxocarbon.base01})
 vim.api.nvim_set_hl(0, "Cursor", {fg = oxocarbon.base00, bg = oxocarbon.base04})
 vim.api.nvim_set_hl(0, "CursorLine", {fg = oxocarbon.none, bg = oxocarbon.base01})
@@ -416,4 +471,5 @@ vim.api.nvim_set_hl(0, "VimwikiList", {link = "markdownListMarker"})
 vim.api.nvim_set_hl(0, "VimwikiLink", {link = "markdownUrl"})
 vim.api.nvim_set_hl(0, "VimwikiCode", {link = "markdownCode"})
 vim.api.nvim_set_hl(0, "FlashLabel", {fg = oxocarbon.base05, bg = oxocarbon.base00, bold = true})
+
 return {oxocarbon = oxocarbon}
