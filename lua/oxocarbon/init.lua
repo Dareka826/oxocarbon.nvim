@@ -11,17 +11,14 @@ local base09 = "#78a9ff"
 
 local oxocarbon = {}
 
-local colorutils = require("oxocarbon.colorutils")
-local blend_hex = colorutils["blend-hex"]
-
 if vim.o.background == "dark" then
   oxocarbon = {
     base00 = base00,
-    base01 = blend_hex(base00, base06, 0.085),
-    base02 = blend_hex(base00, base06, 0.18),
-    base03 = blend_hex(base00, base06, 0.3),
-    base04 = blend_hex(base00, base06, 0.82),
-    base05 = blend_hex(base00, base06, 0.95),
+    base01 = "#262626",
+    base02 = "#393939",
+    base03 = "#525252",
+    base04 = "#d0d0d0",
+    base05 = "#f2f2f2",
     base06 = base06,
     base07 = "#08bdba",
     base08 = "#3ddbd9",
@@ -38,8 +35,8 @@ if vim.o.background == "dark" then
 else
   oxocarbon = {
     base00 = base06,
-    base01 = blend_hex(base00, base06, 0.95),
-    base02 = blend_hex(base00, base06, 0.82),
+    base01 = "#f2f2f2",
+    base02 = "#d0d0d0",
     base03 = base00,
     base04 = "#37474F",
     base05 = "#90A4AE",
