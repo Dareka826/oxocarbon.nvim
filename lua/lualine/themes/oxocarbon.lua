@@ -10,7 +10,7 @@ local colors = {
   replace_bg  = oxocarbon.base10,
   command_bg  = oxocarbon.base13,
   terminal_bg = oxocarbon.base07,
-  mode_fg     = oxocarbon.base02,
+  mode_fg     = oxocarbon.base01,
 }
 
 local default = {fg = colors.line_fg, bg = colors.line_bg}
