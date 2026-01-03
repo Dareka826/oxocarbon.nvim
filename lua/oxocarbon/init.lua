@@ -491,7 +491,7 @@ hl("TermCursor",                             {fg = oxocarbon.base00, bg = oxocar
 hl("TermCursorNC",                           {fg = oxocarbon.base00, bg = oxocarbon.base04})
 
 --[[ statusline/winbar ]]
-hl("StatusLine",                             {fg = oxocarbon.base04, bg = oxocarbon.base00})
+hl("StatusLine",                             {fg = oxocarbon.base04, bg = oxocarbon.base02})
 hl("StatusLineNC",                           {fg = oxocarbon.base04, bg = oxocarbon.base01})
 hl("StatusReplace",                          {fg = oxocarbon.base00, bg = oxocarbon.base08})
 hl("StatusInsert",                           {fg = oxocarbon.base00, bg = oxocarbon.base12})
