@@ -62,6 +62,12 @@ else
   oxocarbon.blend  = "#FAFAFA"
 end
 
+-- Extra colors
+oxocarbon.diff_add    = "#122f2f"
+oxocarbon.diff_change = "#222a39"
+oxocarbon.diff_delete = "#361c28"
+oxocarbon.diff_text   = "#2f3f5c"
+
 --[[ utilities ]]
 local function termcolor(index, color)
   vim.g["terminal_color_" .. tostring(index)] = color
@@ -231,10 +237,10 @@ hl("helpHeader",                             {fg = oxocarbon.base15, bg = oxocar
 hl("DiffAdded",                              {fg = oxocarbon.base07, bg = oxocarbon.none})
 hl("DiffChanged",                            {fg = oxocarbon.base09, bg = oxocarbon.none})
 hl("DiffRemoved",                            {fg = oxocarbon.base10, bg = oxocarbon.none})
-hl("DiffAdd",                                {fg = oxocarbon.none,   bg = "#122f2f"})
-hl("DiffChange",                             {fg = oxocarbon.none,   bg = "#222a39"})
-hl("DiffText",                               {fg = oxocarbon.none,   bg = "#2f3f5c"})
-hl("DiffDelete",                             {fg = oxocarbon.none,   bg = "#361c28"})
+hl("DiffAdd",                                {fg = oxocarbon.none,   bg = oxocarbon.diff_add})
+hl("DiffChange",                             {fg = oxocarbon.none,   bg = oxocarbon.diff_change})
+hl("DiffDelete",                             {fg = oxocarbon.none,   bg = oxocarbon.diff_delete})
+hl("DiffText",                               {fg = oxocarbon.none,   bg = oxocarbon.diff_text})
 
 --[[ search ]]
 hl("IncSearch",                              {fg = oxocarbon.base06, bg = oxocarbon.base10})
