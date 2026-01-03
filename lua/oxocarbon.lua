@@ -116,7 +116,7 @@ hl("VisualNOS",                              {fg = oxocarbon.none,   bg = oxocar
 hl("TooLong",                                {fg = oxocarbon.none,   bg = oxocarbon.base02})
 hl("Debug",                                  {fg = oxocarbon.base13, bg = oxocarbon.none})
 hl("Macro",                                  {fg = oxocarbon.base07, bg = oxocarbon.none})
-hl("MatchParen",                             {fg = oxocarbon.none,   bg = oxocarbon.base02, underline = true})
+hl("MatchParen",                             {fg = oxocarbon.none,   bg = oxocarbon.base03})
 hl("Bold",                                   {fg = oxocarbon.none,   bg = oxocarbon.none,   bold = true})
 hl("Italic",                                 {fg = oxocarbon.none,   bg = oxocarbon.none,   italic = true})
 hl("Underlined",                             {fg = oxocarbon.none,   bg = oxocarbon.none,   underline = true})
