@@ -1,46 +1,48 @@
 local oxocarbon = require("oxocarbon").oxocarbon
 
 local colors = {
-  color0  = oxocarbon.base02,
-  color1  = oxocarbon.base10,
-  color2  = oxocarbon.base08,
-  color3  = oxocarbon.base00,
-  color6  = oxocarbon.base04,
-  color7  = oxocarbon.base09,
-  color8  = oxocarbon.base14,
-  color9  = oxocarbon.base12,
-  color10 = oxocarbon.base13,
+  line_bg = oxocarbon.base00,
+  line_fg = oxocarbon.base04,
+
+  normal_bg  = oxocarbon.base09,
+  insert_bg  = oxocarbon.base12,
+  visual_bg  = oxocarbon.base14,
+  replace_bg = oxocarbon.base10,
+  command_bg = oxocarbon.base13,
+  mode_fg    = oxocarbon.base02,
+
+  replace_alt_fg = oxocarbon.base08,
 }
 
 local theme = {
   normal = {
-    a = {fg = colors.color0, bg = colors.color7},
-    b = {fg = colors.color6, bg = colors.color3},
-    c = {fg = colors.color6, bg = colors.color3},
-    z = {fg = colors.color6, bg = colors.color3},
+    a = {fg = colors.mode_fg, bg = colors.normal_bg},
+    b = {fg = colors.line_fg, bg = colors.line_bg},
+    c = {fg = colors.line_fg, bg = colors.line_bg},
+    z = {fg = colors.line_fg, bg = colors.line_bg},
   },
   insert = {
-    a = {fg = colors.color0, bg = colors.color9},
-    b = {fg = colors.color6, bg = colors.color3},
-    z = {fg = colors.color9, bg = colors.color3},
+    a = {fg = colors.mode_fg, bg = colors.insert_bg},
+    b = {fg = colors.line_fg, bg = colors.line_bg},
+    z = {fg = colors.insert_bg, bg = colors.line_bg},
   },
   visual = {
-    a = {fg = colors.color0, bg = colors.color8},
-    b = {fg = colors.color6, bg = colors.color3},
-    y = {fg = colors.color6, bg = colors.color3},
-    z = {fg = colors.color9, bg = colors.color3},
+    a = {fg = colors.mode_fg, bg = colors.visual_bg},
+    b = {fg = colors.line_fg, bg = colors.line_bg},
+    y = {fg = colors.line_fg, bg = colors.line_bg},
+    z = {fg = colors.insert_bg, bg = colors.line_bg},
   },
   replace = {
-    a = {fg = colors.color0, bg = colors.color1},
-    b = {fg = colors.color2, bg = colors.color3},
+    a = {fg = colors.mode_fg, bg = colors.replace_bg},
+    b = {fg = colors.replace_alt_fg, bg = colors.line_bg},
   },
   inactive = {
-    a = {fg = colors.color0, bg = colors.color7},
-    b = {fg = colors.color6, bg = colors.color3},
-    z = {fg = colors.color0, bg = colors.color3},
+    a = {fg = colors.mode_fg, bg = colors.normal_bg},
+    b = {fg = colors.line_fg, bg = colors.line_bg},
+    z = {fg = colors.mode_fg, bg = colors.line_bg},
   },
   command = {
-    a = {fg = colors.color0, bg = colors.color10},
+    a = {fg = colors.mode_fg, bg = colors.command_bg},
   },
 }
 
