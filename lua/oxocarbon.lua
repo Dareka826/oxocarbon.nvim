@@ -430,8 +430,8 @@ do
 
   --[[ text ]]
   hl("@text",                                  {fg = oxocarbon.base04, bg = oxocarbon.none})
-  hl("@text.strong",                           {fg = oxocarbon.none,   bg = oxocarbon.none})
-  hl("@text.emphasis",                         {fg = oxocarbon.base10, bg = oxocarbon.none, bold = true})
+  hl("@text.emphasis",                         {fg = oxocarbon.base10, bg = oxocarbon.none, italic = true})
+  hl("@text.strong",                           {fg = oxocarbon.none,   bg = oxocarbon.none, bold = true})
   hl("@text.underline",                        {fg = oxocarbon.base10, bg = oxocarbon.none, underline = true})
   hl("@text.strike",                           {fg = oxocarbon.base10, bg = oxocarbon.none, strikethrough = true})
   hl("@text.title",                            {fg = oxocarbon.base10, bg = oxocarbon.none})
