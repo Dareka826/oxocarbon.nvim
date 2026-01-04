@@ -493,12 +493,12 @@ hl("TermCursorNC",                           {fg = oxocarbon.base00, bg = oxocar
 --[[ statusline/winbar ]]
 hl("StatusLine",                             {fg = oxocarbon.base04, bg = oxocarbon.base02})
 hl("StatusLineNC",                           {fg = oxocarbon.base04, bg = oxocarbon.base01})
-hl("StatusReplace",                          {fg = oxocarbon.base00, bg = oxocarbon.base08})
-hl("StatusInsert",                           {fg = oxocarbon.base00, bg = oxocarbon.base12})
-hl("StatusVisual",                           {fg = oxocarbon.base00, bg = oxocarbon.base14})
-hl("StatusTerminal",                         {fg = oxocarbon.base00, bg = oxocarbon.base11})
-hl("StatusNormal",                           {fg = oxocarbon.base00, bg = oxocarbon.base15})
-hl("StatusCommand",                          {fg = oxocarbon.base00, bg = oxocarbon.base13})
+hl("StatusNormal",                           {fg = oxocarbon.base01, bg = oxocarbon.base09})
+hl("StatusInsert",                           {fg = oxocarbon.base01, bg = oxocarbon.base12})
+hl("StatusVisual",                           {fg = oxocarbon.base01, bg = oxocarbon.base14})
+hl("StatusReplace",                          {fg = oxocarbon.base01, bg = oxocarbon.base10})
+hl("StatusCommand",                          {fg = oxocarbon.base01, bg = oxocarbon.base13})
+hl("StatusTerminal",                         {fg = oxocarbon.base01, bg = oxocarbon.base07})
 hl("StatusLineDiagnosticWarn",               {fg = oxocarbon.base14, bg = oxocarbon.base00, bold = true})
 hl("StatusLineDiagnosticError",              {fg = oxocarbon.base10, bg = oxocarbon.base00, bold = true})
 
