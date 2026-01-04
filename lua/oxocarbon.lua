@@ -534,8 +534,8 @@ hl("NotifyTRACETitle",                       {fg = oxocarbon.base13, bg = oxocar
 
 --[[ cmp ]]
 hl("CmpItemAbbr",                            {fg = oxocarbon.base04, bg = oxocarbon.none})
-hl("CmpItemAbbrMatch",                       {fg = oxocarbon.base09, bg = oxocarbon.none})
-hl("CmpItemAbbrMatchFuzzy",                  {fg = oxocarbon.base09, bg = oxocarbon.none})
+hl("CmpItemAbbrMatch",                       {fg = oxocarbon.base14, bg = oxocarbon.none})
+hl("CmpItemAbbrMatchFuzzy",                  {fg = oxocarbon.base14, bg = oxocarbon.none})
 hl("CmpItemMenu",                            {fg = oxocarbon.base04, bg = oxocarbon.none})
 hl("CmpItemKindInterface",                   {fg = oxocarbon.base01, bg = oxocarbon.base08})
 hl("CmpItemKindColor",                       {fg = oxocarbon.base01, bg = oxocarbon.base08})
