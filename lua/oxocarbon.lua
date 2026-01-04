@@ -387,7 +387,7 @@ do
   hl("@float",                                 {link = "Float"})
 
   --[[ functions ]]
-  hl("@function",                              {fg = oxocarbon.base12, bg = oxocarbon.none, bold = true})
+  hl("@function",                              {fg = oxocarbon.base12, bg = oxocarbon.none})
   hl("@function.builtin",                      {fg = oxocarbon.base12, bg = oxocarbon.none})
   --hl("@function.call", {})
   hl("@function.macro",                        {fg = oxocarbon.base07, bg = oxocarbon.none})
@@ -426,7 +426,7 @@ do
   hl("@constant.builtin",                      {fg = oxocarbon.base07, bg = oxocarbon.none})
   hl("@constant.macro",                        {fg = oxocarbon.base07, bg = oxocarbon.none})
   hl("@namespace",                             {fg = oxocarbon.base07, bg = oxocarbon.none})
-  hl("@symbol",                                {fg = oxocarbon.base15, bg = oxocarbon.none, bold = true})
+  hl("@symbol",                                {fg = oxocarbon.base15, bg = oxocarbon.none})
 
   --[[ text ]]
   hl("@text",                                  {fg = oxocarbon.base04, bg = oxocarbon.none})
@@ -499,8 +499,8 @@ hl("StatusVisual",                           {fg = oxocarbon.base01, bg = oxocar
 hl("StatusReplace",                          {fg = oxocarbon.base01, bg = oxocarbon.base10})
 hl("StatusCommand",                          {fg = oxocarbon.base01, bg = oxocarbon.base13})
 hl("StatusTerminal",                         {fg = oxocarbon.base01, bg = oxocarbon.base07})
-hl("StatusLineDiagnosticWarn",               {fg = oxocarbon.base14, bg = oxocarbon.base00, bold = true})
-hl("StatusLineDiagnosticError",              {fg = oxocarbon.base10, bg = oxocarbon.base00, bold = true})
+hl("StatusLineDiagnosticWarn",               {fg = oxocarbon.base14, bg = oxocarbon.base00})
+hl("StatusLineDiagnosticError",              {fg = oxocarbon.base10, bg = oxocarbon.base00})
 
 --[[ telescope ]]
 hl("TelescopeBorder",                        {fg = oxocarbon.blend,  bg = oxocarbon.blend})
@@ -598,8 +598,8 @@ hl("alpha3",                                 {fg = oxocarbon.base03, bg = oxocar
 hl("CodeBlock",                              {fg = oxocarbon.none,   bg = oxocarbon.base01})
 
 --[[ nvim-bufferline ]]
-hl("BufferLineDiagnostic",                   {fg = oxocarbon.base10, bg = oxocarbon.none, bold = true})
-hl("BufferLineDiagnosticVisible",            {fg = oxocarbon.base10, bg = oxocarbon.none, bold = true})
+hl("BufferLineDiagnostic",                   {fg = oxocarbon.base10, bg = oxocarbon.none})
+hl("BufferLineDiagnosticVisible",            {fg = oxocarbon.base10, bg = oxocarbon.none})
 
 --[[ preservim/vim-markdown ]]
 hl("htmlH1",                                 {link = "markdownH1"})
@@ -620,6 +620,6 @@ hl("VimwikiLink",                            {link = "markdownUrl"})
 hl("VimwikiCode",                            {link = "markdownCode"})
 
 --[[ flash ]]
-hl("FlashLabel",                             {fg = oxocarbon.base05, bg = oxocarbon.base00, bold = true})
+hl("FlashLabel",                             {fg = oxocarbon.base05, bg = oxocarbon.base00})
 
 return {oxocarbon = oxocarbon}
