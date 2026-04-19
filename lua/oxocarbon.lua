@@ -486,7 +486,7 @@ end
 hl("NvimInternalError",                      {fg = oxocarbon.base00, bg = oxocarbon.base08})
 hl("NormalFloat",                            {fg = oxocarbon.base05, bg = oxocarbon.blend})
 hl("FloatBorder",                            {fg = oxocarbon.blend,  bg = oxocarbon.blend})
-hl("NormalNC",                               {fg = oxocarbon.base05, bg = oxocarbon.base00})
+hl("NormalNC",                               {fg = oxocarbon.base04, bg = oxocarbon.base00})
 hl("TermCursor",                             {fg = oxocarbon.base00, bg = oxocarbon.base04})
 hl("TermCursorNC",                           {fg = oxocarbon.base00, bg = oxocarbon.base04})
 
