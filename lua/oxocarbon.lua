@@ -68,6 +68,8 @@ oxocarbon.diff_change = "#222a39"
 oxocarbon.diff_delete = "#361c28"
 oxocarbon.diff_text   = "#2f3f5c"
 
+oxocarbon.comment = "#8888bb"
+
 --[[ utilities ]]
 local function termcolor(index, color)
   vim.g["terminal_color_" .. tostring(index)] = color
@@ -260,7 +262,7 @@ hl("WinSeparator",                           {fg = oxocarbon.base01, bg = oxocar
 --[[ regular syntax ]]
 hl("Boolean",                                {fg = oxocarbon.base09, bg = oxocarbon.none})
 hl("Character",                              {fg = oxocarbon.base14, bg = oxocarbon.none})
-hl("Comment",                                {fg = oxocarbon.base03, bg = oxocarbon.none})
+hl("Comment",                                {fg = oxocarbon.comment, bg = oxocarbon.none})
 hl("Conceal",                                {fg = oxocarbon.none,   bg = oxocarbon.none})
 hl("Conditional",                            {fg = oxocarbon.base09, bg = oxocarbon.none})
 hl("Constant",                               {fg = oxocarbon.base04, bg = oxocarbon.none})
